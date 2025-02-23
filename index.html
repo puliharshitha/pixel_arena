@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelArena - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="home-container">
+    <h1>PixelArena</h1>
+    <p>Choose a game and play with a partner or against the computer!</p>
+
+    <div class="game-cards">
+      <!-- Tic-Tac-Toe -->
+      <div class="game-card" onclick="navigateToGame('tic-tac-toe')">
+        <h2>Tic-Tac-Toe</h2>
+        <p>Classic 3x3 grid game</p>
+      </div>
+
+      <!-- Memory Match -->
+      <div class="game-card" onclick="navigateToGame('memory-match')">
+        <h2>Memory Match</h2>
+        <p>Test your memory skills</p>
+      </div>
+
+      <!-- Rock-Paper-Scissors -->
+      <div class="game-card" onclick="navigateToGame('rock-paper-scissors')">
+        <h2>Rock-Paper-Scissors</h2>
+        <p>Classic hand game</p>
+      </div>
+
+      <!-- Tencies -->
+      <div class="game-card" onclick="navigateToGame('2048')">
+        <h2>2048 </h2>
+        <p>Add the numbers</p>
+      </div>
+    </div>
+
+    <div class="mode-selection">
+      <button onclick="setMode('partner')">Play with Partner</button>
+      <button onclick="setMode('computer')">Play vs Computer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

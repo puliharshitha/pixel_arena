@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f9f3f3; /* Soft pink background */
+    color: #6b5b95; /* Pastel purple text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ff6f61; /* Coral pink */
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  #status {
+    font-size: 1.5rem;
+    color: #6b5b95; /* Pastel purple */
+    margin-bottom: 20px;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    background-color: #fce4ec; /* Light pink */
+    border: 2px solid #ff6f61; /* Coral pink border */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    perspective: 1000px;
+  }
+  
+  .card.flipped {
+    background-color: #ffcdd2; /* Slightly darker pink when flipped */
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #c8e6c9; /* Light green for matched cards */
+    border-color: #66bb6a; /* Green border for matched cards */
+    cursor: default;
+  }
+  
+  .card:hover {
+    background-color: #ffcdd2; /* Slightly darker pink on hover */
+    transform: scale(1.05);
+  }
+  
+  #reset {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #ff6f61; /* Coral pink */
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 111, 97, 0.2);
+  }
+  
+  #reset:hover {
+    background-color: #ff4a3d; /* Darker coral pink on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(255, 111, 97, 0.3);
+  }
+  
+  .home-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #ff6f61; /* Coral pink */
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 111, 97, 0.2);
+  }
+  
+  .home-button:hover {
+    background-color: #ff4a3d; /* Darker coral pink on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(255, 111, 97, 0.3);
+  }
