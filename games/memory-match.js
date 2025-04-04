@@ -6,12 +6,10 @@ let cards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G
 let flippedCards = [];
 let matchedCards = [];
 
-// Shuffle the cards
 function shuffle(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-// Initialize the board
 function initializeBoard() {
   board.innerHTML = '';
   shuffledCards = shuffle(cards);
@@ -28,7 +26,6 @@ function initializeBoard() {
   });
 }
 
-// Flip a card
 function flipCard(event) {
   const card = event.target;
   if (flippedCards.length < 2 && !flippedCards.includes(card) && !matchedCards.includes(card)) {
@@ -41,7 +38,6 @@ function flipCard(event) {
   }
 }
 
-// Check if the flipped cards match
 function checkForMatch() {
   const [card1, card2] = flippedCards;
 
@@ -63,14 +59,11 @@ function checkForMatch() {
   flippedCards = [];
 }
 
-// Reset the game
 function resetGame() {
   initializeBoard();
   status.textContent = 'Find all the matching pairs!';
 }
 
-// Event listeners
 resetButton.addEventListener('click', resetGame);
 
-// Initialize the game
 initializeBoard();
