@@ -1,6 +1,7 @@
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: #f9f3f3;
+  background: url('assets/gif.gif') no-repeat center center fixed;
+  background-size: cover;
   color: #6b5b95;
   margin: 0;
   padding: 0;

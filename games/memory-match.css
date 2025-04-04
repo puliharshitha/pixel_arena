@@ -1,7 +1,7 @@
 /* General styling */
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: #f9f3f3;
+  background-color: #ffffff;
   color: #6b5b95;
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ h1 {
 .card {
   width: 100px;
   height: 100px;
-  background-color: #ddd;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .card.flipped {
-  background-color: #ff6f61;
+  background-color: #9b84d4;
   color: #fff;
 }
 
