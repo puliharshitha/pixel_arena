@@ -17,14 +17,14 @@ function handleCellClick(event) {
   event.target.classList.add(currentPlayer);
 
   if (checkWin()) {
-    status.textContent = `Player ${currentPlayer} Wins! 🎉`;
+    status.textContent = `Player ${currentPlayer} Wins! `;
     gameActive = false;
     playSound('win');
     return;
   }
 
   if (!gameState.includes('')) {
-    status.textContent = 'It\'s a Draw! 😊';
+    status.textContent = 'It\'s a Draw! ';
     gameActive = false;
     playSound('draw');
     return;
@@ -45,14 +45,14 @@ function computerMove() {
     cells[randomIndex].classList.add('O');
 
     if (checkWin()) {
-      status.textContent = 'Computer Wins! 🤖';
+      status.textContent = 'Computer Wins! ';
       gameActive = false;
       playSound('lose');
       return;
     }
 
     if (!gameState.includes('')) {
-      status.textContent = 'It\'s a Draw! 😊';
+      status.textContent = 'It\'s a Draw! ';
       gameActive = false;
       playSound('draw');
       return;
