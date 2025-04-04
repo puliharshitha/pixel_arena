@@ -2,7 +2,7 @@ body {
   font-family: 'Press Start 2P', cursive;
   background: url('assets/gif.gif') no-repeat center center fixed;
   background-size: cover;
-  color: #6b5b95;
+  color: #3e315e;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,14 +15,14 @@ body {
 
 h1 {
   font-size: 2em;
-  color: #6b5b95;
+  color: #3e315e;
   margin-bottom: 10px;
 }
 
 p {
   font-size: 1em;
   margin-bottom: 20px;
-  color: #6b5b95;
+  color: #3e315e;
 }
 
 .game-cards {
@@ -36,7 +36,7 @@ p {
   background-color: #ddd;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 4px 4px 0 #6b5b95;
+  box-shadow: 4px 4px 0 #3e315e;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s;
   width: 30%;
