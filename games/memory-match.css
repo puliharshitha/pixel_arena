@@ -1,7 +1,7 @@
 /* General styling */
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #6b5b95;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .card.flipped {
-  background-color: #9b84d4;
+  background-color: #ff4a3d;
   color: #fff;
 }
 
