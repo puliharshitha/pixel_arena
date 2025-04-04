@@ -22,7 +22,7 @@ body {
 }
 
 #status {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 20px;
 }
 
@@ -38,6 +38,7 @@ body {
   border: 3px solid transparent;
   border-radius: 10px;
   transition: 0.3s;
+  font-size: .5em;
 }
 
 .choice-img:hover {
